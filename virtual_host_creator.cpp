@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 #include <fstream>
+#include <cstdlib>
 using namespace std;
 
 string rootDir(string root_pro_dir)
@@ -38,11 +39,10 @@ void writeData(string filename, string new_data)
 int main()
 {
   system("cls");
-  // 1. get the public directory (folder) of your project
-  string xampp_installed_folder;
-  cout << "Enter xampp installed folder (c:\\xampp) : ";
-  cin >> xampp_installed_folder;
+  string xampp = getenv("xa-con");
+  string xampp_installed_folder = xampp.substr(0, xampp.find_last_of('\\'));
 
+  // 1. get the public directory (folder) of your project
   string project_dir;
   cout << "Enter public folder of your project (D:\\projects\\proj1\\public) : ";
   cin >> project_dir;
