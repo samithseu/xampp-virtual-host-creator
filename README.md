@@ -16,5 +16,3 @@
 3. Enter a preferred server name that you want. E.g : _(dev.proj1.test)_
 4. __Restart the xampp server.__
 #### If you encounter any problems, please forgive me.
----
-<p align="left">Developed by <a href="https://t.me/samithseu">@samithseu</a></p>
